@@ -22,7 +22,7 @@ def find_unique_elements (arr)
     n[element] += 1
   end
   n.each_pair { |k,v| 
-    if v <= 1
+    if v == 1
       return_array << k
     end
   }
